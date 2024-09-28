@@ -3,7 +3,7 @@
 // DATA DEFENITION
 
 typedef struct {
-    void *next = NULL;
+    void *next;
     int data;
 } Node;
 
