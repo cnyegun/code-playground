@@ -8,7 +8,6 @@ typedef struct Node {
 } Node;
 
 // CONSTANTS DENIFNITION
-Node *head = NULL;
 
 // FUNCTIONS DEFENITION
 
@@ -62,6 +61,7 @@ void printMenu() {
 
 int main(void)
 {
+    Node *head = NULL;
     Node* testNode1 = createNode(775);
     Node* testNode2 = createNode(521);
     Node* testNode3 = createNode(922);
