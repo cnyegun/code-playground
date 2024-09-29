@@ -12,19 +12,37 @@ Node *head = NULL;
 
 // FUNCTIONS DEFENITION
 
-// LinkedList -> LinkedList
+// Node (head), Node -> Node (head)
 // add a node to the list
 // example    *head - [1] - [2] - [3] - NULL  
 // add [4] -> *head - [4] - [1] - [2] - [3] - NULL 
 // example    *head - NULL
 // add [4] -> *head - [4] - NULL
-void addOnHead();
+void addOnHead(Node* head, Node* newNode) {
+    newNode->next = head; 
+    head = newNode;
+}
 
 // Number -> Node 
 // create a node with the given number as its data
 Node* createNode(int value) {
     Node* newNode = (Node*) malloc(sizeof(Node)); 
+    if (newNode == NULL) {
+        printf("MEMORY ALLOCATION FAILED\n");
+        return NULL;
+    }
+    newNode->data = value;
+    newNode->next = NULL;
     return newNode;
+}
+
+// LinkedList (head) -> stdout
+// print the whole LinkedList given the head
+void displayList(Node* head) {
+    Node* tmp = head;
+    while (tmp != NULL) {
+        printf("-[%d]-");
+    }
 }
 
 // remove a node from the list
@@ -42,7 +60,7 @@ void printMenu() {
 
 int main(void)
 {
-    createNode(5);
+    Node* testNode = createNode(99);
     // int option = -1;
     // while (option != 4)
     // {
