@@ -72,7 +72,8 @@ int main(void)
     addOnHead(&head, testNode3);
     addOnHead(&head, testNode4);
     addOnHead(&head, testNode5);
-    displayList(head);
+
+
     // int option = -1;
     // while (option != 4)
     // {
@@ -93,5 +94,7 @@ int main(void)
     //         }
     //     }
     // }
+
+
     return 0;
 }
