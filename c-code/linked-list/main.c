@@ -18,7 +18,7 @@ Node *head = NULL;
 // add [4] -> *head - [4] - [1] - [2] - [3] - NULL 
 // example    *head - NULL
 // add [4] -> *head - [4] - NULL
-void addOnHead(
+void addOnHead();
 
 // remove a node from the list
 
