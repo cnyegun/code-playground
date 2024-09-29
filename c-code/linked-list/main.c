@@ -18,14 +18,14 @@ Node *head = NULL;
 // add [4] -> *head - [4] - [1] - [2] - [3] - NULL 
 // example    *head - NULL
 // add [4] -> *head - [4] - NULL
-
+void addOnHead(
 
 // remove a node from the list
 
 // insert a node into a position in the list 
 
 // Display the program's menu to the user
-void printMenu(){
+void printMenu() {
     printf("You have the following options: \n");
     printf("\t1. Add a note to the list.\n");
     printf("\t2. Remove a note from the list.\n");
