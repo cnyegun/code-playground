@@ -8,14 +8,17 @@ typedef struct {
 } Node;
 
 // CONSTANTS DENIFNITION
-
 Node *head = NULL;
 
 // FUNCTIONS DEFENITION
 
 // LinkedList -> LinkedList
 // add a node to the list
-// example 
+// example    *head - [1] - [2] - [3] - NULL  
+// add [4] -> *head - [4] - [1] - [2] - [3] - NULL 
+// example    *head - NULL
+// add [4] -> *head - [4] - NULL
+
 
 // remove a node from the list
 
