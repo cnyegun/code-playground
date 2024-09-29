@@ -17,9 +17,9 @@ typedef struct Node {
 // add [4] -> *head - [4] - [1] - [2] - [3] - NULL 
 // example    *head - NULL
 // add [4] -> *head - [4] - NULL
-void addOnHead(Node* head, Node* newNode) {
-    newNode->next = head; 
-    head = newNode;
+void addOnHead(Node** head, Node* newNode) {
+    newNode->next = *head;
+    *head = newNode;
 }
 
 // Number -> Node 
@@ -40,8 +40,8 @@ Node* createNode(int value) {
 void displayList(Node* head) {
     Node* tmp = head;
     while (tmp != NULL) {
-        printf("-[%d]-");
-        tmp = head->next;
+        printf("-[%d]-", tmp->data);
+        tmp = tmp->next;
     } 
     printf("\n");
 }
@@ -61,17 +61,17 @@ void printMenu() {
 
 int main(void)
 {
-    Node *head = NULL;
+    Node* head = NULL;
     Node* testNode1 = createNode(775);
-    Node* testNode2 = createNode(521);
-    Node* testNode3 = createNode(922);
-    Node* testNode4 = createNode(231);
-    Node* testNode5 = createNode(444);
-    addOnHead(head, testNode1);
-    addOnHead(head, testNode2);
-    addOnHead(head, testNode3);
-    addOnHead(head, testNode4);
-    addOnHead(head, testNode5);
+    Node* testNode2 = createNode(123);
+    Node* testNode3 = createNode(321);
+    Node* testNode4 = createNode(444);
+    Node* testNode5 = createNode(5592);
+    addOnHead(&head, testNode1);
+    addOnHead(&head, testNode2);
+    addOnHead(&head, testNode3);
+    addOnHead(&head, testNode4);
+    addOnHead(&head, testNode5);
     displayList(head);
     // int option = -1;
     // while (option != 4)
