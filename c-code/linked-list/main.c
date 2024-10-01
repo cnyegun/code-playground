@@ -52,7 +52,7 @@ void displayList(Node* head) {
 
 // Display the program's menu to the user
 void printMenu() {
-    printf("You have the following options: \n");
+    printf("You have the following options:\n");
     printf("\t1. Add a note to the list.\n");
     printf("\t2. Remove a note from the list.\n");
     printf("\t3. Insert a note to the list.\n");
