@@ -72,8 +72,6 @@ int main(void)
     addOnHead(&head, testNode3);
     addOnHead(&head, testNode4);
     addOnHead(&head, testNode5);
-
-
     // int option = -1;
     // while (option != 4)
     // {
